@@ -9,6 +9,11 @@ group :development, :test do
 gem 'sqlite3'
 gem 'rspec-rails'
 end
+
+group :development do
+  gem 'annotate'
+end
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -29,6 +34,8 @@ gem 'turbolinks'
 gem 'therubyracer'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
+# Needs for capability with Rails 3.2 attr_accessible
+gem 'protected_attributes'
 
 group :test do
   gem 'capybara'
